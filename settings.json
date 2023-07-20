@@ -1,9 +1,10 @@
 {
+    "json.validate.enable": false,      
     "errorLens.fontSize": "13",
     "errorLens.fontStyleItalic": true,
     "editor.minimap.enabled": false,
     "breadcrumbs.enabled": false,
-    "editor.fontSize": 15,
+    "editor.fontSize": 16,
     "editor.tabSize": 2,
     "workbench.sideBar.location": "right",
     "workbench.reduceMotion": "on",
@@ -13,16 +14,14 @@
     "explorer.confirmDelete": false,
     //enables auto tag rename in HTML, Javascript, JSON 
     "editor.linkedEditing": true,
-    "editor.stickyScroll.enabled": true,
     "editor.wordWrap": "on",
     "javascript.preferences.renameMatchingJsxTags": true,
     "typescript.preferences.renameMatchingJsxTags": true,
-    "editor.fontFamily": "Comic Code Ligatures",
+    "editor.fontFamily": "'JetBrains Mono'", 
     "workbench.colorTheme": "Shades of Purple (Super Dark)",
     "workbench.iconTheme": "vscode-icons",
     "editor.fontLigatures": true,
     // "editor.mouseWheelZoom": true,
-    "editor.formatOnSave": true,
     "files.autoSave": "onWindowChange",
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": false,
@@ -60,6 +59,17 @@
     "terminal.integrated.cursorStyle": "block",
     "window.zoomLevel": 1,
     "[markdown]": {
-        "editor.formatOnSave": false,
-    }
+        "editor.formatOnSave": false
+    },
+    "liveServer.settings.CustomBrowser": "microsoft-edge",
+
+    // "workbench.colorCustomizations": {
+    //     "editor.selectionHighlightBackground": "#000000",
+    //     "editor.lineHighlightBackground": "#000000",
+    //     "editor.selectionBackground": "#000000",
+    //     "editor.wordHighlightBackground": "#000000",
+    //     "editorCursor.background": "#000000",
+    //     "editorCursor.foreground": "#fad000"
+    // },
+      
 }

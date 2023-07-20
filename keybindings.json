@@ -1,14 +1,16 @@
 // Place your key bindings in this file to override the defaults
 [
+  // expand select automatically (via extention)
   {
     "key": "ctrl+=",
     "command": "expand_region",
     "when": "editorTextFocus"
   },
+  // undo selection (via extention)
   {
     "key": "ctrl+-",
     "command": "undo_expand_region",
-    "when": "editorTextFocus && editorHasSelection"
+    "when": "editorHasSelection"
   },
   {
     "key": "ctrl+-",
@@ -55,10 +57,12 @@
     "key": "d",
     "when": "filesExplorerFocus && !inputFocus"
   },
+  // closes opened file
   {
     "key": "ctrl+w",
     "command": "workbench.action.closeActiveEditor"
   },
+  // save all for all files at once
   {
     "command": "-workbench.action.files.save",
     "key": "ctrl+s"
@@ -67,10 +71,12 @@
     "command": "saveAll",
     "key": "ctrl+s"
   },
+  // split window into 2
   {
     "command": "workbench.action.splitEditor",
     "key": "ctrl+d"
   },
+  // opens terminal
   {
     "command": "-workbench.action.splitEditor",
     "key": "ctrl+\\"
@@ -85,8 +91,29 @@
     "key": "ctrl+`",
     "when": "terminal.active"
   },
+  // wraps element into emmet shortcut
   {
     "key": "ctrl+p",
     "command": "editor.emmet.action.wrapWithAbbreviation"
   },
+  {
+    "key": "ctrl+down",
+    "command": "cursorMove",
+    "args": {
+      "to": "down",
+      "by": "line",
+      "value": 5  // Adjust the value to specify how many lines to move
+    },
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "cursorMove",
+    "args": {
+      "to": "up",
+      "by": "line",
+      "value": 5  // Adjust the value to specify how many lines to move
+    },
+    "when": "textInputFocus && !editorReadonly"
+  }
 ]
