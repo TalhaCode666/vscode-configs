@@ -1,0 +1,65 @@
+{
+    "errorLens.fontSize": "13",
+    "errorLens.fontStyleItalic": true,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.fontSize": 15,
+    "editor.tabSize": 2,
+    "workbench.sideBar.location": "right",
+    "workbench.reduceMotion": "on",
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "extensions.ignoreRecommendations": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    //enables auto tag rename in HTML, Javascript, JSON 
+    "editor.linkedEditing": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.wordWrap": "on",
+    "javascript.preferences.renameMatchingJsxTags": true,
+    "typescript.preferences.renameMatchingJsxTags": true,
+    "editor.fontFamily": "Comic Code Ligatures",
+    "workbench.colorTheme": "Shades of Purple (Super Dark)",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontLigatures": true,
+    // "editor.mouseWheelZoom": true,
+    "editor.formatOnSave": true,
+    "files.autoSave": "onWindowChange",
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": false,
+    "editor.renderLineHighlight": "none",
+    "workbench.layoutControl.type": "menu",
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 7,
+    "workbench.editor.limit.perEditorGroup": true,
+    "explorer.openEditors.visible": 7,
+    "workbench.activityBar.visible": false,
+    // "editor.scrollbar.verticalScrollbarSize": 2,
+    // "editor.scrollbar.horizontalScrollbarSize": 2,
+    // "editor.scrollbar.vertical": "hidden",
+    // "editor.scrollbar.horizontal": "hidden",
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}",
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.startupEditor": "none",
+    "redhat.telemetry.enabled": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "solid",
+    "terminal.integrated.cursorStyle": "block",
+    "window.zoomLevel": 1,
+    "[markdown]": {
+        "editor.formatOnSave": false,
+    }
+}

@@ -1,0 +1,21 @@
+[core]
+	editor = \"C:\\Users\\Jarvic\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+	autocrlf = true
+[user]
+	email = talharajpootofficial@gmail.com
+	name = TalhaCode666
+[alias]
+
+ s 	=	status -sb
+ p = push
+ cm	=	commit -m
+ gt	=	cd `rev-parse --show-toplevel`
+ last		=	log -1 HEAD --stat
+ diff		=	difftool -t vimdiff -y
+ pu = pull
+ cl = clone
+ a = add
+ b = branch
+ m = merge
+ co = checkout
+ rm = rm --cached
