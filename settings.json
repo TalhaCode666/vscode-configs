@@ -1,5 +1,5 @@
 {
-    "json.validate.enable": false,      
+    "json.validate.enable": true,      
     "errorLens.fontSize": "13",
     "errorLens.fontStyleItalic": true,
     "editor.minimap.enabled": false,
@@ -17,10 +17,10 @@
     "editor.wordWrap": "on",
     "javascript.preferences.renameMatchingJsxTags": true,
     "typescript.preferences.renameMatchingJsxTags": true,
-    "editor.fontFamily": "'JetBrains Mono'", 
+    "editor.fontFamily": "'JetBrains Mono'",
+    "editor.fontLigatures": true,
     "workbench.colorTheme": "Shades of Purple (Super Dark)",
     "workbench.iconTheme": "vscode-icons",
-    "editor.fontLigatures": true,
     // "editor.mouseWheelZoom": true,
     "files.autoSave": "onWindowChange",
     "editor.renderWhitespace": "all",
@@ -33,8 +33,6 @@
     "workbench.editor.limit.perEditorGroup": true,
     "explorer.openEditors.visible": 7,
     "workbench.activityBar.visible": false,
-    // "editor.scrollbar.verticalScrollbarSize": 2,
-    // "editor.scrollbar.horizontalScrollbarSize": 2,
     // "editor.scrollbar.vertical": "hidden",
     // "editor.scrollbar.horizontal": "hidden",
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}",
@@ -70,6 +68,90 @@
     //     "editor.wordHighlightBackground": "#000000",
     //     "editorCursor.background": "#000000",
     //     "editorCursor.foreground": "#fad000"
-    // },
-      
-}
+
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<Space>",
+
+    "vim.normalModeKeyBindingsNonRecursive": [
+    // Navigating or switching b/w buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+
+    // Switching editor tabs (while staying in normal mode)
+    { "before": ["<S-h>"], "commands": ["workbench.action.previousEditor"] },
+    { "before": ["<S-l>"], "commands": ["workbench.action.nextEditor"] },
+
+    // splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+    
+    // Enabling Tabs
+    {
+      "before": ["Tab"],
+      "commands": ["tab"]
+    },
+
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    
+    // NICE TO HAVE
+    { "before": ["leader", "w"], "commands": ["workbench.action.files.save"] },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    { "before": ["leader", "g"], "commands": ["editor.action.showHover"] },
+    { "before": ["leader", "r"], "commands": ["editor.action.rename"] },
+    { "after": ["^"], "before": ["<"] },
+    { "after": ["$"], "before": [">"] },
+  ],
+
+  "vim.visualModeKeyBindings": [
+
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    { "after": ["^"], "before": ["<"] },
+    { "after": ["$"], "before": [">"] },
+    
+    {
+      "before": ["Tab"],
+      "commands": ["tab"]
+    },
+
+  ],
+
+ "vim.insertModeKeyBindings": [
+    {
+      "before": ["a", "a"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  // Disables keys in vim 
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-c>": false,
+    "<C-x>": false,
+    "<C-v>": false,
+    "<CR>": false
+  },
+
+  }

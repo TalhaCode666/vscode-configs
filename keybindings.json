@@ -33,6 +33,12 @@
     "key": "a",
     "when": "filesExplorerFocus && !inputFocus"
   },
+  // creates new folder in window explorer
+  {
+    "key": "ctrl+shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
   // rename file in window explorer
   {
     "command": "renameFile",
@@ -72,10 +78,11 @@
     "key": "ctrl+s"
   },
   // split window into 2
-  {
-    "command": "workbench.action.splitEditor",
-    "key": "ctrl+d"
-  },
+  // {
+  //   "command": "workbench.action.splitEditor",
+  //   "key": "ctrl+d"
+  // },
+
   // opens terminal
   {
     "command": "-workbench.action.splitEditor",
@@ -91,6 +98,22 @@
     "key": "ctrl+`",
     "when": "terminal.active"
   },
+  // controls terminal
+  {
+    "key": "shift+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+a",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+b",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
   // wraps element into emmet shortcut
   {
     "key": "ctrl+p",
@@ -102,7 +125,7 @@
     "args": {
       "to": "down",
       "by": "line",
-      "value": 5  // Adjust the value to specify how many lines to move
+      "value": 3 // Adjust the value to specify how many lines to move
     },
     "when": "textInputFocus && !editorReadonly"
   },
@@ -112,8 +135,30 @@
     "args": {
       "to": "up",
       "by": "line",
-      "value": 5  // Adjust the value to specify how many lines to move
+      "value": 3 // Adjust the value to specify how many lines to move
     },
     "when": "textInputFocus && !editorReadonly"
-  }
+  },
+  // disables up down multicursor and enables line copy
+  {
+    "key": "ctrl+shift+alt+down",
+    "command": "-cursorColumnSelectDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+up",
+    "command": "-cursorColumnSelectUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+up",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+alt+down",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  
 ]
