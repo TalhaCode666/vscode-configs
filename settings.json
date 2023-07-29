@@ -22,6 +22,7 @@
     "workbench.colorTheme": "Shades of Purple (Super Dark)",
     "workbench.iconTheme": "vscode-icons",
     // "editor.mouseWheelZoom": true,
+    "editor.lineNumbers": "relative",
     "files.autoSave": "onWindowChange",
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": false,
@@ -139,7 +140,7 @@
 
  "vim.insertModeKeyBindings": [
     {
-      "before": ["a", "a"],
+      "before": ["i", "i"],
       "after": ["<Esc>"]
     }
   ],
@@ -153,5 +154,5 @@
     "<C-v>": false,
     "<CR>": false
   },
-
+    "vim.foldfix": true,
   }

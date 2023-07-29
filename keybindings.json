@@ -82,7 +82,6 @@
   //   "command": "workbench.action.splitEditor",
   //   "key": "ctrl+d"
   // },
-
   // opens terminal
   {
     "command": "-workbench.action.splitEditor",
@@ -160,5 +159,6 @@
     "command": "editor.action.copyLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
   },
+
   
 ]
