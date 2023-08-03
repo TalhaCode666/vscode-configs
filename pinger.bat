@@ -9,7 +9,7 @@ rem The "ping" command is run with the "-n 2 -w 1000" parameters to ping each we
 rem The "&&" operator is used to check the return value of the ping command
 rem If the return value is 0, then the website is up
 rem If the return value is 1, then the website is down
-
+echo +---------------------+
 for %%i in (%websites%) do (
   start /b ping -n 3 -w 1000 %%i > nul && echo %%i : Up || echo %%i : Down
 )
